@@ -1,23 +1,23 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Badge from '@mui/material/Badge';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import { Link } from 'react-router-dom';
-import { styled } from '@mui/material/styles';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Badge from "@mui/material/Badge";
+import MenuItem from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import MailIcon from "@mui/icons-material/Mail";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import { Link } from "react-router-dom";
+import { styled } from "@mui/material/styles";
 
 // css *required
 
 const StyledLink = styled(Link)(({ theme }) => ({
-  textDecoration:"none",
-  fontSize:16,
-  color:"#000"
+  textDecoration: "none",
+  fontSize: 16,
+  color: "#000",
 }));
 
 export default function PrimarySearchAppBar() {
@@ -40,20 +40,19 @@ export default function PrimarySearchAppBar() {
     handleMobileMenuClose();
   };
 
-
-  const menuId = 'primary-search-account-menu';
+  const menuId = "primary-search-account-menu";
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
       anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
+        vertical: "top",
+        horizontal: "right",
       }}
       id={menuId}
       keepMounted
       transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
+        vertical: "top",
+        horizontal: "right",
       }}
       open={isMenuOpen}
       onClose={handleMenuClose}
@@ -63,19 +62,19 @@ export default function PrimarySearchAppBar() {
     </Menu>
   );
 
-  const mobileMenuId = 'primary-search-account-menu-mobile';
+  const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
+        vertical: "top",
+        horizontal: "right",
       }}
       id={mobileMenuId}
       keepMounted
       transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
+        vertical: "top",
+        horizontal: "right",
       }}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
@@ -117,16 +116,11 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box>
-      <AppBar position="static" color="transparent" className='navbar'>
+      <AppBar position="static" color="transparent" className="navbar">
         <Toolbar>
-          <StyledLink to="/"
-
-          >
-           Spell List App
-          </StyledLink>
+          <StyledLink to="/">Spell List App</StyledLink>
           <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-          </Box>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}></Box>
         </Toolbar>
       </AppBar>
       {renderMobileMenu}

@@ -4,7 +4,7 @@ import { gql } from "@apollo/client";
 // Spells
 //================================================================
 export const GQL_getSpells = gql`
-query getSpells {
+  query getSpells {
     spells {
       index
       name
@@ -27,7 +27,7 @@ query getSpells {
         }
         index
         name
-      }    
+      }
       concentration
       ritual
       attack_type
@@ -51,7 +51,6 @@ query getSpells {
           desc
           full_name
           index
-          
         }
       }
       duration

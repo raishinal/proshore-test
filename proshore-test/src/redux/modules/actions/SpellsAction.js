@@ -1,4 +1,4 @@
-import { UPDATE_SPELL_LIST,UPDATE_FAVOURITES } from "../constants/actiontypes";
+import { UPDATE_SPELL_LIST, UPDATE_FAVOURITES } from "../constants/actiontypes";
 //===================================================
 // Actions
 //===================================================
@@ -7,13 +7,13 @@ import { UPDATE_SPELL_LIST,UPDATE_FAVOURITES } from "../constants/actiontypes";
  * @param payload payload
  */
 export function updateSpellList(payload) {
-    return {
-      type: UPDATE_SPELL_LIST,
-      payload: payload,
-    };
-  }
+  return {
+    type: UPDATE_SPELL_LIST,
+    payload: payload,
+  };
+}
 
-  /**
+/**
  * Update Favourite List
  * @param payload payload
  */

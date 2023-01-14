@@ -1,14 +1,10 @@
 import { getToken } from "./Utility";
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloLink,
-} from "@apollo/client";
+import { ApolloClient, InMemoryCache, ApolloLink } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
 import { setContext } from "@apollo/client/link/context";
 import { createUploadLink } from "apollo-upload-client";
 const httpLink = new createUploadLink({
-  uri:"https://www.dnd5eapi.co/graphql",
+  uri: "https://www.dnd5eapi.co/graphql",
 });
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
