@@ -5,13 +5,13 @@ For techninal test provided by proshore the app is build based on requirments.
 ## Table Of Content
 - [Setup](#setup)
 - [Build](#build)
-- [Usage](#usage)
-  - [React](react)
-  - [Redux](redux)
-  - [React-Router-Dom](react-router-dom)
-  - [MUI](mui)
-  - [Apollo](apollo)
-- [Features](features)
+- [Libraries](#libraries)
+  - [React](#react)
+  - [Redux](#redux)
+  - [React-Router-Dom](#react-router-dom)
+  - [MUI](#mui)
+  - [Apollo](#apollo)
+- [Features](#features)
 - [Liscense](#liscense)
 - [Links](#links)
 
@@ -23,7 +23,7 @@ For techninal test provided by proshore the app is build based on requirments.
 
 `npm run build`
 
-## Usage
+## Libraries
 
 ### React
 React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.
@@ -38,7 +38,7 @@ Navigation through pages done easier by react router dom.
 MUI provides a simple, customizable, and accessible library of React components. Follow your own design system, or start with Material Design.
 
 ### Apollo
-Using GQL queries easier.
+Apollo Client is a fully-featured caching GraphQL client with integrations for React, Angular, and more.
 
 ## Features
 
