@@ -67,9 +67,7 @@ const SpellDescription = (props) => {
         <Grid item xs={3}>
           <Item>
             <HeadLabel>DURATION</HeadLabel>
-            <ValueLabel>
-              {data.level && ordinal_suffix_of(data.level)}
-            </ValueLabel>
+            <ValueLabel>{data.duration && data.duration}</ValueLabel>
           </Item>
         </Grid>
         <Grid item xs={3}>

@@ -1,9 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import { ApolloProvider } from "@apollo/client/react";
 import client from "./common/Apollo";
-
 //redux
 import { Provider } from "react-redux";
 import store, { persistor } from "./redux/store";
